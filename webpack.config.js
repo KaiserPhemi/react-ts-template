@@ -4,17 +4,23 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyFiles = require("copy-webpack-plugin");
 
+// Check environment
+const prod = process.env.NODE_ENV === "production";
+
 // configuration
 module.exports = {
   entry: path.resolve(__dirname, "src", "index.tsx"),
   devServer: { historyApiFallback: true },
-  mode: "development",
+  mode: prod ? "production" : "development",
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.(ts|tsx)$/,
         use: ["ts-loader"],
         exclude: /node_modules/,
+        resolve: {
+          extensions: [".ts", ".tsx", ".js", ".json"],
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/,
@@ -41,6 +47,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
+  devtool: prod ? undefined : "source-map",
   plugins: [
     new MiniCssExtractPlugin({
       filename: "[name].css",

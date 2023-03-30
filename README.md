@@ -2,6 +2,24 @@
 
 A template for creating a react app
 
+## Setup
+- Install the following development dependencies:
+  - typescript
+  - webpack 
+  - webpack-cli 
+  - webpack-dev-server
+  - @babel/core 
+  - babel-loader 
+  - @babel/cli 
+  - @babel/preset-env 
+  - @babel/preset-react
+  - html-webpack-plugin
+
+- Install the follwoing dependencies:
+  - react 
+  - react-dom
+  
+
 
 ## Author 
 - Oluwafemi Akinwa
