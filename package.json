@@ -1,11 +1,16 @@
 {
   "name": "react-ts-template",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.0.0",
   "repository": "git@github.com:KaiserPhemi/react-ts-template.git",
   "author": "KaiserPhemi <kaiser.phemi@protonmail.ch>",
   "license": "MIT",
-  "dependencies": {
-    "typescript": "^3.9.5"
+  "scripts": {
+    "start": "webpack-dev-server .",
+    "build": "NODE_ENV=production webpack ."
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.19.1",
+    "node": ">= 16.0.0"
   }
 }
