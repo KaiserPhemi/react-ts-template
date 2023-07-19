@@ -3,28 +3,10 @@
 A template for creating a react app
 
 ## Setup
-- Install the following development dependencies:
-  - typescript
-  - @types/react
-  - @types/react-dom
-  - webpack 
-  - webpack-cli 
-  - webpack-dev-server
-  - @babel/core 
-  - babel-loader 
-  - @babel/cli 
-  - @babel/preset-env 
-  - @babel/preset-react
-  - html-webpack-plugin
-  - css-loader
-  - mini-css-extract-plugin 
-  - ts-loader
-
-- Install the following dependencies:
-  - react 
-  - react-dom
-  
-
+- Dependencies:
+  - `yarn add react react-dom`
+- Dev Dependencies
+  - `yarn add -D @babel/core @babel/preset-env babel-loader webpack webpack-cli @types/react @types/react-dom html-webpack-plugin typescript @types/react @types/react-dom @babel/cli @babel/preset-env @babel/preset-react css-loader mini-css-extract-plugin ts-loader` 
 
 ## Author 
 - Oluwafemi Akinwa
